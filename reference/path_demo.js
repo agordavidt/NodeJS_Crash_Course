@@ -9,3 +9,6 @@ console.log(path.dirname(__dirname));
 
 //File Extenson
 console.log(path.extname(__filename));
+
+// Create path object
+console.log(path.parse(__filename));

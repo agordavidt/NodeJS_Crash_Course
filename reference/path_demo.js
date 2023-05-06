@@ -2,16 +2,16 @@
 const path = require('path');
 
 // Base file name
-console.log(path.basename(__filename));
+console.log("The file name is :" + path.basename(__filename));
 
 // Directory name
-console.log(path.dirname(__dirname));
+console.log("The directory path is:" + path.dirname(__dirname));
 
 //File Extenson
-console.log(path.extname(__filename));
+console.log("The file extension is:" + path.extname(__filename));
 
 // Create path object
-console.log(path.parse(__filename));
+console.log("The path object is:" + path.parse(__filename));
 
 // Concatenate paths
 console.log(path.join(__dirname, 'test', 'hello.html'));

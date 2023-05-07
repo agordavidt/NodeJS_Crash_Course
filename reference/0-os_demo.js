@@ -13,3 +13,6 @@ console.log(os.cpus());
 
 // Free memory
 console.log(os.freemem());
+
+// Total memeory
+console.log(os.totalmem());

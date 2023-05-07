@@ -1,18 +1,18 @@
 const os = require('os');
 
 // Plarform
-console.log(os.platform());
+console.log('CPU Platform:\t' + os.platform());
 
 
 // CPU Arch
-console.log(os.arch());
+console.log('CPU Arch:\t' + os.arch());
 
 // CPU core Info
 console.log(os.cpus());
 
 
 // Free memory
-console.log(os.freemem());
+console.log('Free Memory:\t' + os.freemem());
 
 // Total memeory
-console.log(os.totalmem());
+console.log('Total Memory:\t' + os.totalmem());

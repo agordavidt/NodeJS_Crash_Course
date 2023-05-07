@@ -10,7 +10,16 @@ const path = require('path');
 
 // Create and write to file
 fs.writeFile(path.join(__dirname, '/test', 'hello.txt'), 
-'Hello David!', err => {
+'Hello World! \n', err => {
+    if(err) throw err;
+    console.log('Folder created...');
+
+    // File append
+    fs.appendFile(path.join(__dirname, '/test', 'hello.txt'), 
+'I love Javascript', err => {
     if(err) throw err;
     console.log('Folder created...')
-});
+    }
+    );
+}
+);

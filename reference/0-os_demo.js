@@ -16,3 +16,6 @@ console.log('Free Memory:\t' + os.freemem());
 
 // Total memeory
 console.log('Total Memory:\t' + os.totalmem());
+
+// Uptime
+console.log('Uptime:\t' + os.uptime());

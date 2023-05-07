@@ -4,4 +4,7 @@ const os = require('os');
 console.log(os.platform());
 
 
+// CPU Arch
+console.log(os.arch());
+
 

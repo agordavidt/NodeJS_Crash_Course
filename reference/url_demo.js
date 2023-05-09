@@ -8,4 +8,6 @@ console.log(myUrl.href);
 // Host (root domaain)
 console.log("Host name: "+ myUrl.host);
 
-// 
+// Path name
+console.log("Path name: " + myUrl.pathname);
+

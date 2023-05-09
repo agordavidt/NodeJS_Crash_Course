@@ -11,3 +11,6 @@ console.log("Host name: "+ myUrl.host);
 // Path name
 console.log("Path name: " + myUrl.pathname);
 
+
+// Serialized query
+console.log("Query parameters: " + myUrl.search);

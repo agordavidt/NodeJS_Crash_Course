@@ -14,3 +14,7 @@ console.log("Path name: " + myUrl.pathname);
 
 // Serialized query
 console.log("Query parameters: " + myUrl.search);
+
+
+const states = ["Jigawa", "Kebbi", "Kano", "Nassarawa"];
+states.forEach((state) => console.log(state));

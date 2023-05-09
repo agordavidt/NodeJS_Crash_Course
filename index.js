@@ -1,10 +1,12 @@
-const myCar = require('./my_car');
-const Person = require('./person');
+const http = require('http');
+const path = require('path');
+const fs = require('fs');
 
-console.log(myCar);
-console.log(myCar.price);
+const server = http.createServer((req, res) => {
+    console.log(req.url);
 
-// instantiate the person object
+});
 
-const person1 = new Person('Gerald Pique', 29);
-person1.greeting();
+const PORT = process.env.PORT || 5000
+
+server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

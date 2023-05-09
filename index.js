@@ -19,6 +19,15 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, {'content-type': 'text/html'});
             res.end(content);
         })
+    };
+
+    if (req.res === '/api/users') {
+        const users = [
+            { name: "David Agor", profession: "Software Engineer", experience: 2},
+            {name: "Bestor Ukila", profession: "Digital Marketing", experience: 3}
+        ];
+        res.writeHead(200, { 'content-type': 'application/json'});
+        res.end(JSON.stringify(users));
     }
 
 });
